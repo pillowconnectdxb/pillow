@@ -1,145 +1,129 @@
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Pillow</title>
-    <link rel="icon" type="image/x-icon" href="./pillow official logo .jpeg" />
-    <link rel="stylesheet" href="style.css"/>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
-      style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f2f0] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#181411]">
-            <div class="sm:size-16 lg:size-7">
-              <img src="https://i.imgur.com/g8kthhX.png" alt="Pillow Logo" />
-            </div>
-            <h2 class="text-[#181411] lg:text-lg sm:text-5xl font-bold leading-tight tracking-[-0.015em]">
-              Pillow
-            </h2>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Pillow</title>
+  <link rel="icon" type="image/x-icon" href="./pillow official logo .jpeg" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f2f0] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#181411]">
+          <div class="sm:size-16 lg:size-7">
+            <img src="https://i.imgur.com/g8kthhX.png" alt="Pillow Logo" />
           </div>
-          <div class="lg:flex flex-1 justify-end gap-8 hidden">
-            <div class="flex items-center gap-9">
-              <a class="text-[#181411] lg:text-lg sm:text-3xl font-bold leading-normal" target="_blank" href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal" href="https://x.com/pillowconnect?s=21&t=2ujd8S1O8woHhvufSwCMyw" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal" href="https://www.linkedin.com/company/pillow-connect/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank" class="flex items-center justify-center min-w-[84px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out max-w-[480px] cursor-pointer overflow-hidden rounded-xl h-10 px-4 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-lg font-bold leading-normal tracking-[0.015em]">
-              <span class="truncate">Join</span>
-            </a>
-          </div>
-          <div class="lg:hidden">
-            <button id="menu-button" class="text-[#181411] focus:outline-none border p-4 rounded-xl border-black">
-              <i class="fa-solid fa-bars text-3xl"></i>
-            </button>
-          </div>
-        </header>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden flex flex-col border border-black py-10 mx-10 rounded-xl items-center gap-6 mt-4 px-10">
-          <div class="flex flex-col items-center gap-9">
-            <a class="text-[#181411] lg:text-lg sm:text-3xl font-bold leading-normal" target="_blank" href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==">
+          <h2 class="text-[#181411] lg:text-lg sm:text-5xl font-bold leading-tight tracking-[-0.015em]">
+            Pillow
+          </h2>
+        </div>
+        <div class="lg:flex flex-1 justify-end gap-8 hidden">
+          <div class="flex items-center gap-9">
+            <a class="text-[#181411] lg:text-lg sm:text-3xl font-bold leading-normal" target="_blank"
+              href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal" href="https://x.com/pillowconnect?s=21&t=2ujd8S1O8woHhvufSwCMyw" target="_blank">
+            <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal"
+              href="https://x.com/pillowconnect?s=21&t=2ujd8S1O8woHhvufSwCMyw" target="_blank">
               <i class="fa-brands fa-x-twitter"></i>
             </a>
-            <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal" href="https://www.linkedin.com/company/pillow-connect/" target="_blank">
+            <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal"
+              href="https://www.linkedin.com/company/pillow-connect/" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank" class="flex items-center justify-center min-w-[84px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out max-w-[480px] cursor-pointer overflow-hidden rounded-xl h-10 px-4 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-lg font-bold leading-normal tracking-[0.015em]">
+          <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank"
+            class="flex items-center justify-center min-w-[84px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out max-w-[480px] cursor-pointer overflow-hidden rounded-xl h-10 px-4 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-lg font-bold leading-normal tracking-[0.015em]">
             <span class="truncate">Join</span>
           </a>
         </div>
-        
-        <script>
-          document.getElementById('menu-button').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-          });
-        </script>
-        
-        <div class="lg:px-40 md:px-10 flex flex-1 justify-center py-5">
-          <div
-            class="layout-content-container flex flex-col max-w-[960px] flex-1"
-          >
-            <div class="@container">
-              <div class="@[480px]:p-4">
+        <div class="lg:hidden">
+          <button id="menu-button" class="text-[#181411] focus:outline-none border p-4 rounded-xl border-black">
+            <i class="fa-solid fa-bars text-3xl"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden lg:hidden flex flex-col border border-black py-10 mx-10 rounded-xl items-center gap-6 mt-4 px-10">
+        <div class="flex flex-col items-center gap-9">
+          <a class="text-[#181411] lg:text-lg sm:text-3xl font-bold leading-normal" target="_blank"
+            href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal"
+            href="https://x.com/pillowconnect?s=21&t=2ujd8S1O8woHhvufSwCMyw" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a class="text-[#181411] lg:text-lg sm:text-3xl font-medium leading-normal"
+            href="https://www.linkedin.com/company/pillow-connect/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank"
+          class="flex items-center justify-center min-w-[84px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out max-w-[480px] cursor-pointer overflow-hidden rounded-xl h-10 px-4 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-lg font-bold leading-normal tracking-[0.015em]">
+          <span class="truncate">Join</span>
+        </a>
+      </div>
+
+      <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+          var menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+        });
+      </script>
+
+      <div class="lg:px-40 md:px-10 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div class="relative w-full @[480px]:rounded-xl overflow-hidden" style="max-height: 100vh;">
+                <img src="https://i.imgur.com/ZKi8GZw.png" alt="Background image"
+                  class="w-full h-auto object-cover max-h-screen" />
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40"></div>
                 <div
-                  class="flex lg:h-[480px] sm:h-screen flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style="
-                    background-image: linear-gradient(
-                        rgba(0, 0, 0, 0.1) 0%,
-                        rgba(0, 0, 0, 0.4) 100%
-                      ),
-                      url('https://i.imgur.com/ZKi8GZw.png');
-                  "
-                >
-                  
-                  <label
-                    class="flex flex-col min-w-40 lg:h-14 w-full max-w-[480px] h-20"
-                  >
-                    <div
-                      class="flex w-full flex-1 items-stretch rounded-xl h-full"
-                    >
-                      <div
-                        class="text-[#887563] flex bg-white items-center justify-center rounded-l-xl"
-                        data-icon="MagnifyingGlass"
-                        data-size="20px"
-                        data-weight="regular"
-                      ></div>
-                      
+                  class="absolute inset-0 flex flex-col gap-6 items-start justify-end px-4 pb-10 @[480px]:gap-8 @[480px]:px-10">
+                  <label class="flex flex-col min-w-40 lg:h-14 w-full max-w-[480px] h-20">
+                    <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                      <div class="text-[#887563] flex bg-white items-center justify-center rounded-l-xl"
+                        data-icon="MagnifyingGlass" data-size="20px" data-weight="regular"></div>
                     </div>
                   </label>
                 </div>
               </div>
             </div>
-            <div class="lg:py-5 sm:py-28  flex flex-col items-center justify-center lg:gap-14 sm:gap-28 mt-10">
+          </div>
+          <div class="lg:py-5 sm:py-28  flex flex-col items-center justify-center lg:gap-14 sm:gap-28 mt-10">
             <h2
-              class="text-[#181411] text-left lg:text-[32px] md:text-7xl font-bold leading-tight tracking-[-0.015em] lg:px-4 md:px-6 pb-3 pt-5"
-            >
-            Join Pillow 
+              class="text-[#181411] text-left lg:text-[32px] md:text-7xl font-bold leading-tight tracking-[-0.015em] lg:px-4 md:px-6 pb-3 pt-5">
+              Join Pillow
             </h2>
-            <p class="text-[#181411] lg:text-base sm:text-6xl lg:font-medium sm:font-bold leading-normal mt-[-3rem]  ">
-              "Pillow is an AI-driven, multi-domain platform that connects freelancers, agencies, creators, brands, and individuals. It offers seamless, human-like interactions through advanced AI, making it easy to find, manage, and work with talent or secure work across various industries."
+            <p class="text-[#181411] lg:text-base sm:text-6xl lg:font-medium sm:font-bold leading-normal mt-[-3rem]">
+              "Pillow is an AI-driven, multi-domain platform that connects freelancers, agencies, creators, brands, and
+              individuals. It offers seamless, human-like interactions through advanced AI, making it easy to find,
+              manage, and work with talent or secure work across various industries."
             </p>
             <h2
-              class="text-[#181411]  text-left lg:text-[32px] md:text-7xl font-bold leading-tight tracking-[-0.015em] lg:px-4 md:px-6 pb-3 pt-20"
-            >
-            Our Vision and Roadmap
+              class="text-[#181411]  text-left lg:text-[32px] md:text-7xl font-bold leading-tight tracking-[-0.015em] lg:px-4 md:px-6 pb-3 pt-20">
+              Our Vision and Roadmap
             </h2>
             <div class="grid grid-cols-[40px_1fr] lg:gap-x-2 md:gap-x-8 lg:gap-y-1 sm:gap-y-20 lg:px-4 md:px-8">
               <div class="flex flex-col items-center gap-1 pt-3">
-                <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20"
-                  style="
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20" style="
                     background-image: url('https://cdn.usegalileo.ai/sdxl10/db7f05ba-d50b-46f1-a4bc-03c6d6167c87.png');
-                  "
-                ></div>
+                  "></div>
                 <div class="w-[1.5px] bg-[#e5e0dc] lg:h-2 sm:h-10 grow"></div>
               </div>
               <div class="flex flex-1 lg:gap-0 md:gap-10 flex-col py-3">
@@ -147,17 +131,18 @@
                   Initial Phase
                 </p>
                 <p class="text-[#887563] lg:text-base sm:text-4xl font-normal leading-normal">
-                  Beta Version Launch & Community Forum:So, here’s the plan: In about a month, we’re launching the beta version of Pillow. This is your chance to jump in early, explore what we’ve built, and give us your thoughts. We’re really excited to hear what you think because your feedback will help shape the platform. Until then, why not join us on Instagram? We’re hanging out there, talking about Pillow, sharing ideas, and building this thing together. It’s going to be a fun journey!
+                  Beta Version Launch & Community Forum:So, here’s the plan: In about a month, we’re launching the beta
+                  version of Pillow. This is your chance to jump in early, explore what we’ve built, and give us your
+                  thoughts. We’re really excited to hear what you think because your feedback will help shape the
+                  platform. Until then, why not join us on Instagram? We’re hanging out there, talking about Pillow,
+                  sharing ideas, and building this thing together. It’s going to be a fun journey!
                 </p>
               </div>
               <div class="flex flex-col items-center gap-1">
                 <!-- <div class="w-[1.5px] bg-[#e5e0dc] h-2"></div> -->
-                <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20"
-                  style="
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20" style="
                     background-image: url('https://cdn.usegalileo.ai/sdxl10/7ee7abe3-c27a-48d0-b4ab-652da143b4ef.png');
-                  "
-                ></div>
+                  "></div>
                 <div class="w-[1.5px] bg-[#e5e0dc] lg:h-2 sm:h-10 grow"></div>
               </div>
               <div class="flex flex-1 lg:gap-0 md:gap-10 flex-col py-3">
@@ -165,48 +150,42 @@
                   Expansion Phase
                 </p>
                 <p class="text-[#887563] lg:text-base sm:text-4xl font-normal leading-normal">
-                  Full Site Launch & Enhanced Capabilities:A few months down the road, we’ll be rolling out the full version of Pillow. This is where things get really interesting. You’ll be able to hire talent, discover new opportunities, seek work, and basically manage everything in one place. Imagine creating your profile, connecting with amazing people, and exploring a world of possibilities—all in one platform. We can’t wait to see how you use it!
+                  Full Site Launch & Enhanced Capabilities:A few months down the road, we’ll be rolling out the full
+                  version of Pillow. This is where things get really interesting. You’ll be able to hire talent,
+                  discover new opportunities, seek work, and basically manage everything in one place. Imagine creating
+                  your profile, connecting with amazing people, and exploring a world of possibilities—all in one
+                  platform. We can’t wait to see how you use it!
                 </p>
               </div>
               <div class="flex flex-col items-center gap-1 pb-3">
                 <!-- <div class="w-[1.5px] bg-[#e5e0dc] h-2"></div> -->
-                <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20"
-                  style="
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full lg:size-6 sm:size-20" style="
                     background-image: url('https://cdn.usegalileo.ai/stability/50c20f0a-aea4-4678-a2a7-029858bada34.png');
-                  "
-                ></div>
+                  "></div>
               </div>
               <div class="flex flex-1 lg:gap-0 md:gap-10 flex-col py-3">
                 <p class="text-[#181411] lg:text-base sm:text-6xl lg:font-medium sm:font-bold leading-normal">
                   Growth Phase
                 </p>
                 <p class="text-[#887563] lg:text-base sm:text-4xl font-normal leading-normal">
-                  Networking Events & Platform Evolution:As we keep growing, we’re planning to host some awesome networking events. These will be chances for everyone to come together, share ideas, and give us feedback on how we’re doing. We’re all about creative freedom—working from anywhere, doing anything, and pushing boundaries. We’re here to shake things up and make Pillow the most exciting place for connecting across all genres and industries. And we’re looking forward to making this platform even more amazing with your help!
+                  Networking Events & Platform Evolution:As we keep growing, we’re planning to host some awesome
+                  networking events. These will be chances for everyone to come together, share ideas, and give us
+                  feedback on how we’re doing. We’re all about creative freedom—working from anywhere, doing anything,
+                  and pushing boundaries. We’re here to shake things up and make Pillow the most exciting place for
+                  connecting across all genres and industries. And we’re looking forward to making this platform even
+                  more amazing with your help!
                 </p>
               </div>
             </div>
-            <div
-              class="grid lg:grid-cols-2  lg:gap-3 sm:gap-20 p-4 md:grid-cols-1 md:px-16 lg:px-4"
-            >
+            <div class="grid lg:grid-cols-2  lg:gap-3 sm:gap-20 p-4 md:grid-cols-1 md:px-16 lg:px-4">
               <div
-                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col"
-              >
-                <div
-                  class="text-[#181411]"
-                  data-icon="Gift"
-                  data-size="28px"
-                  data-weight="regular"
-                >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
+                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col">
+                <div class="text-[#181411]" data-icon="Gift" data-size="28px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
+                    fill="currentColor" viewBox="0 0 256 256">
                     <path
-                      d="M119.76,217.94A8,8,0,0,1,112,224a8.13,8.13,0,0,1-2-.24l-32-8a8,8,0,0,1-2.5-1.11l-24-16a8,8,0,1,1,8.88-13.31l22.84,15.23,30.66,7.67A8,8,0,0,1,119.76,217.94Zm132.69-96.46a15.89,15.89,0,0,1-8,9.25l-23.68,11.84-55.08,55.09a8,8,0,0,1-7.6,2.1l-64-16a8.06,8.06,0,0,1-2.71-1.25L35.86,142.87,11.58,130.73a16,16,0,0,1-7.16-21.46L29.27,59.58h0a16,16,0,0,1,21.46-7.16l22.06,11,53-15.14a8,8,0,0,1,4.4,0l53,15.14,22.06-11a16,16,0,0,1,21.46,7.16l24.85,49.69A15.9,15.9,0,0,1,252.45,121.48Zm-46.18,12.94L179.06,80H147.24L104,122c12.66,8.09,32.51,10.32,50.32-7.63a8,8,0,0,1,10.68-.61l34.41,27.57Zm-187.54-18,17.69,8.85L61.27,75.58,43.58,66.73ZM188,152.66l-27.71-22.19c-19.54,16-44.35,18.11-64.91,5a16,16,0,0,1-2.72-24.82.6.6,0,0,1,.08-.08L137.6,67.06,128,64.32,77.58,78.73,50.21,133.46l49.2,35.15,58.14,14.53Zm49.24-36.24L212.42,66.73l-17.69,8.85,24.85,49.69Z"
-                    ></path>
+                      d="M119.76,217.94A8,8,0,0,1,112,224a8.13,8.13,0,0,1-2-.24l-32-8a8,8,0,0,1-2.5-1.11l-24-16a8,8,0,1,1,8.88-13.31l22.84,15.23,30.66,7.67A8,8,0,0,1,119.76,217.94Zm132.69-96.46a15.89,15.89,0,0,1-8,9.25l-23.68,11.84-55.08,55.09a8,8,0,0,1-7.6,2.1l-64-16a8.06,8.06,0,0,1-2.71-1.25L35.86,142.87,11.58,130.73a16,16,0,0,1-7.16-21.46L29.27,59.58h0a16,16,0,0,1,21.46-7.16l22.06,11,53-15.14a8,8,0,0,1,4.4,0l53,15.14,22.06-11a16,16,0,0,1,21.46,7.16l24.85,49.69A15.9,15.9,0,0,1,252.45,121.48Zm-46.18,12.94L179.06,80H147.24L104,122c12.66,8.09,32.51,10.32,50.32-7.63a8,8,0,0,1,10.68-.61l34.41,27.57Zm-187.54-18,17.69,8.85L61.27,75.58,43.58,66.73ZM188,152.66l-27.71-22.19c-19.54,16-44.35,18.11-64.91,5a16,16,0,0,1-2.72-24.82.6.6,0,0,1,.08-.08L137.6,67.06,128,64.32,77.58,78.73,50.21,133.46l49.2,35.15,58.14,14.53Zm49.24-36.24L212.42,66.73l-17.69,8.85,24.85,49.69Z">
+                    </path>
                   </svg>
                 </div>
                 <div class="flex flex-col lg:gap-1 sm:gap-10">
@@ -214,55 +193,41 @@
                     Accessible Entry for New Talent and Opportunities
                   </h2>
                   <p class="text-[#887563] lg:text-sm sm:text-4xl font-normal leading-normal">
-                    Pillow Connect makes it easy for talent, agencies, and freelancers to get discovered and find work. Our platform offers two distinct portals—one for discovering talent and another for finding job opportunities. With advanced collaboration tools, brands can connect with the right creators, and creators can explore new opportunities, ensuring impactful results for everyone involved.                  </p>
+                    Pillow Connect makes it easy for talent, agencies, and freelancers to get discovered and find work.
+                    Our platform offers two distinct portals—one for discovering talent and another for finding job
+                    opportunities. With advanced collaboration tools, brands can connect with the right creators, and
+                    creators can explore new opportunities, ensuring impactful results for everyone involved. </p>
                 </div>
               </div>
               <div
-                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col"
-              >
-                <div
-                  class="text-[#181411]"
-                  data-icon="UsersThree"
-                  data-size="28px"
-                  data-weight="regular"
-                >
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
-                fill="currentColor"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z"
-                ></path>
-              </svg>
+                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col">
+                <div class="text-[#181411]" data-icon="UsersThree" data-size="28px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
+                    fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z">
+                    </path>
+                  </svg>
                 </div>
                 <div class="flex flex-col lg:gap-1 sm:gap-10">
                   <h2 class="text-[#181411] lg:text-base sm:text-5xl font-bold leading-tight">
                     AI-Driven Conversational Experience
                   </h2>
                   <p class="text-[#887563] lg:text-sm sm:text-4xl font-normal leading-normal">
-                    Meet the AI that acts more like a collaborator than a tool. Instead of just filling out forms, our AI engages you in conversations, understanding your needs and helping you find the perfect fit. It’s like having a virtual assistant who knows exactly what you’re looking for and can guide you every step of the way.                  </p>
+                    Meet the AI that acts more like a collaborator than a tool. Instead of just filling out forms, our
+                    AI engages you in conversations, understanding your needs and helping you find the perfect fit. It’s
+                    like having a virtual assistant who knows exactly what you’re looking for and can guide you every
+                    step of the way. </p>
                 </div>
               </div>
               <div
-                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col"
-              >
-                <div
-                  class="text-[#181411]"
-                  data-icon="Handshake"
-                  data-size="28px"
-                  data-weight="regular"
-                >
-                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
+                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col">
+                <div class="text-[#181411]" data-icon="Handshake" data-size="28px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
+                    fill="currentColor" viewBox="0 0 256 256">
                     <path
-                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
-                    ></path>
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z">
+                    </path>
                   </svg>
                 </div>
                 <div class="flex flex-col lg:gap-1 sm:gap-10">
@@ -270,35 +235,32 @@
                     All-in-One Project Management Tool
                   </h2>
                   <p class="text-[#887563] lg:text-sm sm:text-4xl font-normal leading-normal">
-                  Forget juggling multiple platforms. Pillow Connect comes with an inbuilt project management tool, so you don’t need Jira for agile, Slack for communication, or LinkedIn for networking. We bring it all together in one seamless experience, making your work more efficient and keeping everything you need in one place.                  </p>
+                    Forget juggling multiple platforms. Pillow Connect comes with an inbuilt project management tool, so
+                    you don’t need Jira for agile, Slack for communication, or LinkedIn for networking. We bring it all
+                    together in one seamless experience, making your work more efficient and keeping everything you need
+                    in one place. </p>
                 </div>
               </div>
               <div
-                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col"
-              >
-                <div
-                  class="text-[#181411]"
-                  data-icon="Lightbulb"
-                  data-size="28px"
-                  data-weight="regular"
-                >
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
-                fill="currentColor"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"
-                ></path>
-              </svg>
+                class="flex flex-1 lg:gap-3 sm:gap-5 rounded-lg border border-[#e5e0dc] bg-white lg:p-4 sm:p-14 flex-col">
+                <div class="text-[#181411]" data-icon="Lightbulb" data-size="28px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-[28px] lg:w-[28px] sm:h-24 sm-w-24"
+                    fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z">
+                    </path>
+                  </svg>
                 </div>
                 <div class="flex flex-col lg:gap-1 sm:gap-10">
                   <h2 class="text-[#181411] lg:text-base sm:text-5xl font-bold leading-tight">
                     Barnter Collaboration and Commission Based Pay
                   </h2>
                   <p class="text-[#887563] lg:text-sm sm:text-4xl font-normal leading-normal">
-                    Barter Collaboration and Commission-Based Pay: Pillow Connect provides opportunities through barter collaborations and commission-based roles. Emerging creators, new agencies, and freelancers can trade services to build their portfolios, while sales reps, performance-driven agencies, and affiliate marketers can earn through results and commissions. This flexible model supports both new and seasoned professionals in growing and succeeding.                  </p>
+                    Barter Collaboration and Commission-Based Pay: Pillow Connect provides opportunities through barter
+                    collaborations and commission-based roles. Emerging creators, new agencies, and freelancers can
+                    trade services to build their portfolios, while sales reps, performance-driven agencies, and
+                    affiliate marketers can earn through results and commissions. This flexible model supports both new
+                    and seasoned professionals in growing and succeeding. </p>
                 </div>
               </div>
             </div>
@@ -306,13 +268,27 @@
           <div class="container">
             <aside class="carousel">
               <div class="carousel__wrapper">
-                <div class="item" id="slide-0"><img src="https://cdn.usegalileo.ai/sdxl10/8b79c016-faa9-479e-b1aa-c21675dc3627.png" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-1"><img src="https://i.pinimg.com/564x/1f/55/cd/1f55cd763c1f6a03128d80cb2df15ee2.jpg" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-2"><img src="https://cdn.usegalileo.ai/sdxl10/e8fefb1f-7395-4dce-b780-952dff5ec601.png" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-3"><img src="https://qph.cf2.quoracdn.net/main-qimg-127eb158683892910692896b3ae89f4e-lq" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-4"><img src="https://cdn.usegalileo.ai/sdxl10/d1b6147b-44b0-4564-b72b-73057e2e446d.png" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-5"><img src="https://i.pinimg.com/564x/41/7c/51/417c512b38f533df62728bd14a52dc2f.jpg" alt="" width="418" height="418"/></div>
-                <div class="item" id="slide-5"><img src="https://i.pinimg.com/564x/7e/7f/77/7e7f779cfd117149f14d858ad2c7006d.jpg" alt="" width="418" height="418"/></div>
+                <div class="item" id="slide-0"><img
+                    src="https://cdn.usegalileo.ai/sdxl10/8b79c016-faa9-479e-b1aa-c21675dc3627.png" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-1"><img
+                    src="https://i.pinimg.com/564x/1f/55/cd/1f55cd763c1f6a03128d80cb2df15ee2.jpg" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-2"><img
+                    src="https://cdn.usegalileo.ai/sdxl10/e8fefb1f-7395-4dce-b780-952dff5ec601.png" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-3"><img
+                    src="https://qph.cf2.quoracdn.net/main-qimg-127eb158683892910692896b3ae89f4e-lq" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-4"><img
+                    src="https://cdn.usegalileo.ai/sdxl10/d1b6147b-44b0-4564-b72b-73057e2e446d.png" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-5"><img
+                    src="https://i.pinimg.com/564x/41/7c/51/417c512b38f533df62728bd14a52dc2f.jpg" alt="" width="418"
+                    height="418" /></div>
+                <div class="item" id="slide-5"><img
+                    src="https://i.pinimg.com/564x/7e/7f/77/7e7f779cfd117149f14d858ad2c7006d.jpg" alt="" width="418"
+                    height="418" /></div>
               </div>
             </aside>
             <article class="instagram">
@@ -322,36 +298,35 @@
               </section>
             </article>
           </div>
-            <div class="flex flex-col gap-10 px-4 py-10 @container sm:py-28">
-              <div class="flex flex-col gap-6">
-                <div class="flex flex-col lg:gap-4 sm:gap-10">
-                  <h1
-                    class="text-[#181411] tracking-light lg:text-[32px] sm:text-7xl font-bold leading-tight @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                  >
-                  The Journey 
-                  </h1>
-                  <p
-                    class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal text-justify lg:max-w-[720px]"
-                  >
-                  Manthan, Ritik, and Aviraj, are great friends with a shared passion for content creation. Manthan and Ritik have been friends since childhood, while Ritik met Aviraj at a cohort in Mumbai, which brought us all together. Our journey has always revolved around content and the digital space, driving us to create Pillow                  </p>
-                  <p
-                    class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal text-justify lg:max-w-[720px] my-4"
-                  >
-                  —a marketplace designed to empower creators, brands, freelancers, agencies, and individuals to connect and collaborate seamlessly. We believe in the power of partnerships and the incredible potential that arises when all five work together effectively."
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <a
-                    href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA=="
-                    target="_blank"
-                    class="flex min-w-[84px] max-w-[480px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out cursor-pointer items-center justify-center overflow-hidden rounded-xl lg:h-10 lg:px-4 sm:h-28 @[480px]:px-10 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-5xl font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
-                    <span class="truncate">Join Free</span>
-                  </a>
-                </div>
+          <div class="flex flex-col gap-10 px-4 py-10 @container sm:py-28">
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col lg:gap-4 sm:gap-10">
+                <h1
+                  class="text-[#181411] tracking-light lg:text-[32px] sm:text-7xl font-bold leading-tight @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                  The Journey
+                </h1>
+                <p
+                  class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal text-justify lg:max-w-[720px]">
+                  Manthan, Ritik, and Aviraj, are great friends with a shared passion for content creation. Manthan and
+                  Ritik have been friends since childhood, while Ritik met Aviraj at a cohort in Mumbai, which brought
+                  us all together. Our journey has always revolved around content and the digital space, driving us to
+                  create Pillow </p>
+                <p
+                  class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal text-justify lg:max-w-[720px] my-4">
+                  —a marketplace designed to empower creators, brands, freelancers, agencies, and individuals to connect
+                  and collaborate seamlessly. We believe in the power of partnerships and the incredible potential that
+                  arises when all five work together effectively."
+                </p>
+              </div>
+              <div class="flex items-start">
+                <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank"
+                  class="flex min-w-[84px] max-w-[480px] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out cursor-pointer items-center justify-center overflow-hidden rounded-xl lg:h-10 lg:px-4 sm:h-28 @[480px]:px-10 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-5xl font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                  <span class="truncate">Join Free</span>
+                </a>
               </div>
             </div>
-            <!-- <div
+          </div>
+          <!-- <div
               class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
             >
               <div class="flex flex-col gap-3 pb-3">
@@ -400,33 +375,25 @@
                 </div>
               </div>
             </div> -->
-            <div class="@container">
-              <div
-                class="flex flex-col justify-end lg:gap-6 sm:gap-16 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20"
-              >
-                <div class="flex flex-col lg:gap-2 sm:gap-16 text-center">
-                  <h1
-                    class="text-[#181411] tracking-light lg:text-[32px] font-bold leading-tight sm:text-7xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                  >
-                    Join our community
-                  </h1>
-                  <p
-                    class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal max-w-[720px"
-                  >
-                    Connect with other creators, share your work, and learn from
-                    others
-                  </p>
-                </div>
-                <div class="flex flex-1 justify-center">
-                  <div class="flex justify-center">
-                    <a
-                      href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA=="
-                      target="_blank"
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl lg:h-10 sm:h-28 lg:px-4 sm:px-10 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-5xl font-bold leading-normal tracking-[0.015em] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out"
-                    >
-                      <span class="truncate">Join Free</span>
-                    </a>
-                  </div>
+          <div class="@container">
+            <div
+              class="flex flex-col justify-end lg:gap-6 sm:gap-16 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+              <div class="flex flex-col lg:gap-2 sm:gap-16 text-center">
+                <h1
+                  class="text-[#181411] tracking-light lg:text-[32px] font-bold leading-tight sm:text-7xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                  Join our community
+                </h1>
+                <p class="text-[#181411] lg:text-base sm:text-4xl font-normal leading-normal max-w-[720px">
+                  Connect with other creators, share your work, and learn from
+                  others
+                </p>
+              </div>
+              <div class="flex flex-1 justify-center">
+                <div class="flex justify-center">
+                  <a href="https://www.instagram.com/pillow.connect?igsh=MXJlcmh4aGk0MTdlMA==" target="_blank"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl lg:h-10 sm:h-28 lg:px-4 sm:px-10 bg-[#302117] text-white text-[#181411] lg:text-sm sm:text-5xl font-bold leading-normal tracking-[0.015em] hover:bg-[#c76a15] hover:scale-105 transition duration-300 ease-in-out">
+                    <span class="truncate">Join Free</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -434,6 +401,8 @@
         </div>
       </div>
     </div>
-  </body>
-  <script src="main.js"></script>
+  </div>
+</body>
+<script src="main.js"></script>
+
 </html>
